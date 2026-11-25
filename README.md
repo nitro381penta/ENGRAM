@@ -7,7 +7,7 @@ It is designed to assess spatial memory through an interactive augmented reality
 
 **Language:** The application's on-screen interface and recorded voice instructions are in German.
 
-## What Engram does
+## What ENGRAM does
 
 - **Recognizes everyday objects:** YOLO11s runs on-device through the Unity Inference Engine using the Quest's Passthrough Camera API.
 - **Creates an AR representation:** Recognized object classes are matched to a library of textured, scale-adjusted 3D models.
@@ -23,7 +23,7 @@ It is designed to assess spatial memory through an interactive augmented reality
 
 > **About the digital twins:** The current 3D models were created in advance from photographs of the specific test objects using Meshy, then prepared for Unity. Engram performs **object recognition and model matching at runtime**, not automatic 3D generation of arbitrary household objects. A different home environment may require additional models or a future model-generation workflow.
 
-## How to use Engram
+## How to use ENGRAM
 
 1. **Start the application on a Meta Quest 3.** Allow the requested camera and spatial permissions. Follow the in-headset instructions; introductory instructions can be skipped where offered.
 2. **Establish the table reference.** Select the tabletop and confirm its position. Engram saves a spatial anchor so the reference can be restored in later sessions.
@@ -72,7 +72,7 @@ The project also contains development and diagnostic scripts used to test tracki
 
 ### Restore the YOLO11s model (not included)
 
-Engram uses the **Ultralytics YOLO11s detection model** in **ONNX** format. The detector expects a fixed **640 × 640** input, the standard **80 COCO classes**, and raw prediction output (without exported NMS); non-maximum suppression is handled in `EngramObjectDetector.cs`. The pretrained weights are not committed to this repository.
+ENGRAM uses the **Ultralytics YOLO11s detection model** in **ONNX** format. The detector expects a fixed **640 × 640** input, the standard **80 COCO classes**, and raw prediction output (without exported NMS); non-maximum suppression is handled in `EngramObjectDetector.cs`. The pretrained weights are not committed to this repository.
 
 Generate the required ONNX file using [Ultralytics' official YOLO11 model](https://docs.ultralytics.com/models/yolo11/) and [ONNX export documentation](https://docs.ultralytics.com/integrations/onnx/):
 
