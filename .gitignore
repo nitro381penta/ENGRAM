@@ -1,0 +1,96 @@
+# Unity-generated folders and caches
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emory[Cc]aptures/
+/[Rr]ecordings/
+/[Ee]xported[Oo]bj/
+/.utmp/
+
+# Unity build artifacts and troubleshooting output
+*.apk
+*.aab
+*.unitypackage
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShip/
+*_BurstDebugInformation_DoNotShipItWithYourGame/
+sysinfo.txt
+crashlytics-build.properties
+/TempAssembly.dll
+/ignore.conf
+
+# Unity-generated Android / Addressables assets
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa.meta
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa/
+
+# Generated IDE and project files
+.vs/
+.vscode/
+.idea/
+.gradle/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+
+# OS and editor leftovers
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.bak
+*~
+
+# Local test exports and headset recordings
+/CapturedMetrics/
+/EngramRecall_*.json
+/EngramZones_*.json
+/EngramSpatialObjects.json
+/OVR_CapturedMetrics/
+
+# Third-party content restored locally by each developer
+# Retain Unity .meta files for imported asset GUIDs, while excluding source files.
+/Assets/Leohpaz/**
+!/Assets/Leohpaz/**/
+!/Assets/Leohpaz/**/*.meta
+!/Assets/Leohpaz/*.meta
+
+# Pretrained Ultralytics YOLO11s model weights (download/export separately)
+# Keep *.onnx.meta tracked if present so Unity references can be restored.
+**/yolo11s*.onnx
+**/yolo11s*.sentis
+**/yolo11s*.pt
+
+# Secrets or signing files (if ever added)
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+
+# Keep Assets/, Packages/, ProjectSettings/, Images/ and their Unity .meta files.
+# Do NOT blanket-ignore *.meta, *.asset, *.fbx, *.onnx, *.png or *.json.
+# If the actual model file has a different name than yolo11s*.onnx, add its exact path here.
+
+/.plastic/
